@@ -1,6 +1,8 @@
 export const HERO_TAGS = [
-  'NestJS',
+  'Node.js',
+  'JavaScript',
   'TypeScript',
+  'NestJS',
   'PostgreSQL',
   'Kubernetes',
   'Azure',
