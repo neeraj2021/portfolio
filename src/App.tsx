@@ -38,6 +38,8 @@ const stats: Stat[] = [
 
 const WHATSAPP_LINK =
   'https://wa.me/919264238020?text=Hi%20Neeraj%2C%20I%27d%20like%20to%20connect%20about%20an%20opportunity.'
+const LINKEDIN_URL = 'https://www.linkedin.com/in/neeraj-kumar-/'
+const MEDIUM_URL = 'https://medium.com/@neeraj_kumar_'
 
 const surfaceCard =
   'rounded-2xl border border-slate-200 bg-white shadow-md shadow-slate-200/80 dark:border-slate-800/70 dark:bg-slate-900/80 dark:shadow-slate-900/40'
@@ -113,22 +115,25 @@ function TimelineItem(props: {
   const { side, title, subtitle, period, location, bullets } = props
 
   return (
-    <div className="relative grid grid-cols-[1fr_auto_1fr] gap-6 md:gap-10">
-      <div className={side === 'left' ? 'space-y-2 text-right' : 'hidden md:block'} />
+    <div className="relative grid grid-cols-[3rem_1fr] gap-4 md:grid-cols-[1fr_auto_1fr] md:gap-10">
+      {/* Col 1: empty on desktop (or left content), timeline dot+line on mobile */}
+      <div
+        className={`col-start-1 hidden md:block ${side === 'left' ? 'space-y-2 text-right' : ''}`}
+      />
 
-      <div className="flex flex-col items-center">
-        <div className="h-full w-px bg-gradient-to-b from-sky-500/60 via-sky-400/40 to-transparent" />
-        <div className="-mt-4 flex h-8 w-8 items-center justify-center rounded-full border border-sky-400/60 bg-slate-950">
-          <div className="h-2.5 w-2.5 rounded-full bg-sky-400" />
-        </div>
+      {/* Col 1 mobile / Col 2 desktop: timeline stem + dot */}
+      <div className="col-start-1 row-start-1 flex flex-col items-center pt-1 md:col-start-2 md:row-start-auto">
+        <div className="absolute left-[0.6875rem] top-8 bottom-0 w-px bg-gradient-to-b from-sky-500/60 via-sky-400/40 to-transparent md:relative md:left-auto md:top-auto md:h-full md:w-px" />
+        <div className="relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-sky-400/60 bg-slate-950 dark:bg-slate-950" />
       </div>
 
+      {/* Col 2 mobile / Col 3 desktop: card (full width, no inner scroll) */}
       <motion.div
         initial={{ opacity: 0, x: side === 'left' ? -40 : 40 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true, amount: 0.4 }}
-        className={`${surfaceCard} space-y-2 p-5`}
+        className={`${surfaceCard} col-start-2 min-w-0 space-y-2 p-5 md:col-start-3`}
       >
         <div className="text-sm font-medium text-sky-700 dark:text-sky-300">
           {subtitle}
@@ -311,13 +316,23 @@ function App() {
                   neerajkmahawar2017@gmail.com
                 </a>
                 <p className="text-slate-500 dark:text-slate-400">
-                  <span className="font-medium text-slate-800/90 dark:text-slate-300/90">
+                  <a
+                    href={LINKEDIN_URL}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-medium text-sky-600 hover:text-sky-700 dark:text-sky-300 dark:hover:text-sky-200"
+                  >
                     LinkedIn
-                  </span>{' '}
-                  ·{' '}
-                  <span className="font-medium text-slate-800/90 dark:text-slate-300/90">
+                  </a>
+                  {' · '}
+                  <a
+                    href={MEDIUM_URL}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-medium text-sky-600 hover:text-sky-700 dark:text-sky-300 dark:hover:text-sky-200"
+                  >
                     Medium
-                  </span>
+                  </a>
                 </p>
               </div>
             </div>
