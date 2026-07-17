@@ -6,19 +6,19 @@ export const TechnicalExpertise: React.FC = () => {
       category1: {
         title: 'Backend',
         skills: [
-          { name: 'Node.js / TypeScript', level: '8+ yrs' },
-          { name: 'NestJS / Express', level: 'Exp' },
-          { name: 'Microservices Arch', level: 'Adv' },
-          { name: 'Event-Driven Dev', level: 'Adv' },
+          { name: 'Node.js / TypeScript', level: '5+ yrs' },
+          { name: 'NestJS / Express', level: '5+ yrs' },
+          { name: 'Microservices Arch', level: '4+ yrs' },
+          { name: 'Event-Driven Dev', level: '4+ yrs' },
         ],
       },
       category2: {
         title: 'Databases',
         skills: [
-          { name: 'PostgreSQL / MySQL', level: 'Adv' },
-          { name: 'Redis (Caching/Queues)', level: 'Adv' },
-          { name: 'MongoDB / NoSQL', level: 'Exp' },
-          { name: 'Vector DBs (Pinecone)', level: 'Mid' },
+          { name: 'PostgreSQL / MySQL', level: '4+ yrs' },
+          { name: 'Redis (Caching/Queues)', level: '4+ yrs' },
+          { name: 'Cassandra DB', level: '2+ yrs' },
+          { name: 'Vector DBs (pgvector)', level: '1+ yrs' },
         ],
       },
     },
@@ -26,19 +26,18 @@ export const TechnicalExpertise: React.FC = () => {
       category1: {
         title: 'AI Engineering',
         skills: [
-          { name: 'LangChain / LangGraph', level: 'Adv' },
-          { name: 'RAG Implementation', level: 'Adv' },
-          { name: 'Prompt Engineering', level: 'Exp' },
-          { name: 'Python / PyTorch', level: 'Mid' },
+          { name: 'LangChain / LangGraph', level: '2+ yrs' },
+          { name: 'RAG Implementation', level: '2+ yrs' },
+          { name: 'Prompt Engineering', level: '2+ yrs' },
+          { name: 'Agentic AI/Workflows', level: '2+ yrs' },
         ],
       },
       category2: {
         title: 'Cloud/Infra',
         skills: [
-          { name: 'AWS / GCP', level: 'Adv' },
-          { name: 'Kubernetes / Docker', level: 'Adv' },
-          { name: 'CI/CD (GitHub Actions)', level: 'Exp' },
-          { name: 'Terraform / IaC', level: 'Mid' },
+          { name: 'Azure', level: '2+ yrs' },
+          { name: 'Kubernetes / Docker', level: '3+ yrs' },
+          { name: 'CI/CD (GitHub Actions)', level: '3+ yrs' },
         ],
       },
     },
@@ -46,17 +45,16 @@ export const TechnicalExpertise: React.FC = () => {
       category1: {
         title: 'Frontend',
         skills: [
-          { name: 'React / Next.js', level: 'Exp' },
-          { name: 'Tailwind CSS', level: 'Adv' },
-          { name: 'State Mgmt (Redux)', level: 'Exp' },
+          { name: 'React / Next.js', level: '5+ yrs' },
+          { name: 'Tailwind CSS', level: '4+ yrs' },
+          { name: 'State Mgmt (Redux)', level: '2+ yrs' },
         ],
       },
       category2: {
         title: 'Observability',
         skills: [
-          { name: 'Prometheus/Grafana', level: 'Adv' },
-          { name: 'ELK Stack', level: 'Exp' },
-          { name: 'Distributed Tracing', level: 'Mid' },
+          { name: 'Prometheus/Grafana', level: '3+ yrs' },
+          { name: 'GroundCover', level: '2+ yrs' },
         ],
       },
     },
