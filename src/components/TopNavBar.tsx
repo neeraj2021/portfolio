@@ -1,18 +1,20 @@
 import React, { useState } from 'react'
+import { useNavigate, useLocation } from 'react-router-dom'
 
 interface TopNavBarProps {
   currentView: 'home' | 'dms-case-study'
-  onNavigate: (view: 'home' | 'dms-case-study', sectionId?: string) => void
 }
 
-export const TopNavBar: React.FC<TopNavBarProps> = ({ currentView, onNavigate }) => {
+export const TopNavBar: React.FC<TopNavBarProps> = ({ currentView }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const navigate = useNavigate()
+  const location = useLocation()
 
   const handleNavClick = (e: React.MouseEvent, sectionId?: string) => {
     e.preventDefault()
     setMobileMenuOpen(false)
-    if (currentView !== 'home') {
-      onNavigate('home', sectionId)
+    if (location.pathname !== '/') {
+      navigate(sectionId ? `/#${sectionId}` : '/')
     } else if (sectionId) {
       const el = document.getElementById(sectionId)
       if (el) {

@@ -1,10 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-interface ExperienceSectionProps {
-  onOpenDmsCaseStudy: () => void
-}
-
-export const ExperienceSection: React.FC<ExperienceSectionProps> = ({ onOpenDmsCaseStudy }) => {
+export const ExperienceSection: React.FC = () => {
   return (
     <section className="border-y border-outline-variant bg-surface-container-low py-20" id="experience">
       <div className="mx-auto max-w-320 px-6">
@@ -43,12 +40,14 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({ onOpenDmsC
               <p className="text-sm leading-relaxed text-on-surface-variant">
                 Architected a DMS platform that supported 50k+ sellers. Focused on high-availability and zero-downtime deployments.
               </p>
-              <button 
-                onClick={onOpenDmsCaseStudy}
+              <Link 
+                to="/case-study/dms"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-3 inline-block cursor-pointer font-mono text-xs font-medium text-primary hover:underline"
               >
                 CASE STUDY: DMS ARCHITECTURE →
-              </button>
+              </Link>
             </div>
           </div>
 

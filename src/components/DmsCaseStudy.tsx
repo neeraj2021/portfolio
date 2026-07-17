@@ -1,19 +1,21 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 interface DmsCaseStudyProps {
-  onBack: () => void
+  onBack?: () => void
 }
 
 export const DmsCaseStudy: React.FC<DmsCaseStudyProps> = ({ onBack }) => {
   return (
     <div className="mx-auto min-h-screen max-w-320 px-4 pt-28 pb-20 md:px-6">
       {/* Back button */}
-      <button 
+      <Link 
+        to="/"
         onClick={onBack}
-        className="mb-8 flex cursor-pointer items-center gap-2 rounded-lg border border-outline-variant bg-surface-container px-4 py-2 font-mono text-sm text-primary transition-all hover:gap-1"
+        className="mb-8 flex w-max cursor-pointer items-center gap-2 rounded-lg border border-outline-variant bg-surface-container px-4 py-2 font-mono text-sm text-primary transition-all hover:gap-1"
       >
         <span className="material-symbols-outlined text-base">arrow_back</span> Back to Portfolio
-      </button>
+      </Link>
 
       {/* Header */}
       <header className="mb-16">

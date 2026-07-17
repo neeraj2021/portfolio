@@ -1,10 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-interface WorkSectionProps {
-  onOpenDmsCaseStudy: () => void
-}
-
-export const WorkSection: React.FC<WorkSectionProps> = ({ onOpenDmsCaseStudy }) => {
+export const WorkSection: React.FC = () => {
   return (
     <section className="mx-auto max-w-320 px-6 py-20" id="work">
       <div className="mb-12 flex items-end justify-between">
@@ -45,12 +42,14 @@ export const WorkSection: React.FC<WorkSectionProps> = ({ onOpenDmsCaseStudy }) 
               </div>
             </div>
           </div>
-          <button 
-            onClick={onOpenDmsCaseStudy}
+          <Link 
+            to="/case-study/dms"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex w-max cursor-pointer items-center gap-1.5 font-mono text-sm font-medium text-primary transition-all hover:gap-3 hover:text-primary-fixed"
           >
             VIEW CASE STUDY <span className="material-symbols-outlined text-base">open_in_new</span>
-          </button>
+          </Link>
         </div>
 
         {/* Project 2: AI Stock Agent */}
@@ -82,12 +81,14 @@ export const WorkSection: React.FC<WorkSectionProps> = ({ onOpenDmsCaseStudy }) 
               </div>
             </div>
           </div>
-          <button 
-            onClick={onOpenDmsCaseStudy}
+          <Link 
+            to="/case-study/dms"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex w-max cursor-pointer items-center gap-1.5 font-mono text-sm font-medium text-primary transition-all hover:gap-3 hover:text-primary-fixed"
           >
             VIEW CASE STUDY <span className="material-symbols-outlined text-base">open_in_new</span>
-          </button>
+          </Link>
         </div>
 
         {/* Project 3: K8s Observability (Span 2) */}
@@ -122,12 +123,14 @@ export const WorkSection: React.FC<WorkSectionProps> = ({ onOpenDmsCaseStudy }) 
             </div>
           </div>
           <div className="mt-4 border-t border-outline-variant/40 pt-4">
-            <button 
-              onClick={onOpenDmsCaseStudy}
+            <Link 
+              to="/case-study/dms"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex w-max cursor-pointer items-center gap-1.5 font-mono text-sm font-medium text-primary transition-all hover:gap-3 hover:text-primary-fixed"
             >
               VIEW CASE STUDY <span className="material-symbols-outlined text-base">open_in_new</span>
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -142,12 +145,14 @@ export const WorkSection: React.FC<WorkSectionProps> = ({ onOpenDmsCaseStudy }) 
               <span className="block font-mono text-xs font-semibold text-primary">40% Efficiency Gain</span>
             </div>
           </div>
-          <button 
-            onClick={onOpenDmsCaseStudy}
-            className="mt-6 flex cursor-pointer items-center gap-1 font-mono text-sm font-medium text-primary transition-all hover:gap-2"
+          <Link 
+            to="/case-study/dms"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 flex w-max cursor-pointer items-center gap-1 font-mono text-sm font-medium text-primary transition-all hover:gap-2"
           >
             VIEW DETAILS <span className="material-symbols-outlined text-sm">arrow_forward</span>
-          </button>
+          </Link>
         </div>
 
         {/* Project 5: RAG Assistant */}
@@ -161,12 +166,14 @@ export const WorkSection: React.FC<WorkSectionProps> = ({ onOpenDmsCaseStudy }) 
               <span className="block font-mono text-xs font-semibold text-primary">85% Query Accuracy</span>
             </div>
           </div>
-          <button 
-            onClick={onOpenDmsCaseStudy}
-            className="mt-6 flex cursor-pointer items-center gap-1 font-mono text-sm font-medium text-primary transition-all hover:gap-2"
+          <Link 
+            to="/case-study/dms"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 flex w-max cursor-pointer items-center gap-1 font-mono text-sm font-medium text-primary transition-all hover:gap-2"
           >
             VIEW DETAILS <span className="material-symbols-outlined text-sm">arrow_forward</span>
-          </button>
+          </Link>
         </div>
       </div>
     </section>
