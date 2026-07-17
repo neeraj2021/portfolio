@@ -9,8 +9,8 @@ export const TechnicalExpertise: React.FC = () => {
           { name: 'Node.js / TypeScript', level: '8+ yrs' },
           { name: 'NestJS / Express', level: 'Exp' },
           { name: 'Microservices Arch', level: 'Adv' },
-          { name: 'Event-Driven Dev', level: 'Adv' }
-        ]
+          { name: 'Event-Driven Dev', level: 'Adv' },
+        ],
       },
       category2: {
         title: 'Databases',
@@ -18,9 +18,9 @@ export const TechnicalExpertise: React.FC = () => {
           { name: 'PostgreSQL / MySQL', level: 'Adv' },
           { name: 'Redis (Caching/Queues)', level: 'Adv' },
           { name: 'MongoDB / NoSQL', level: 'Exp' },
-          { name: 'Vector DBs (Pinecone)', level: 'Mid' }
-        ]
-      }
+          { name: 'Vector DBs (Pinecone)', level: 'Mid' },
+        ],
+      },
     },
     {
       category1: {
@@ -29,8 +29,8 @@ export const TechnicalExpertise: React.FC = () => {
           { name: 'LangChain / LangGraph', level: 'Adv' },
           { name: 'RAG Implementation', level: 'Adv' },
           { name: 'Prompt Engineering', level: 'Exp' },
-          { name: 'Python / PyTorch', level: 'Mid' }
-        ]
+          { name: 'Python / PyTorch', level: 'Mid' },
+        ],
       },
       category2: {
         title: 'Cloud/Infra',
@@ -38,9 +38,9 @@ export const TechnicalExpertise: React.FC = () => {
           { name: 'AWS / GCP', level: 'Adv' },
           { name: 'Kubernetes / Docker', level: 'Adv' },
           { name: 'CI/CD (GitHub Actions)', level: 'Exp' },
-          { name: 'Terraform / IaC', level: 'Mid' }
-        ]
-      }
+          { name: 'Terraform / IaC', level: 'Mid' },
+        ],
+      },
     },
     {
       category1: {
@@ -48,24 +48,26 @@ export const TechnicalExpertise: React.FC = () => {
         skills: [
           { name: 'React / Next.js', level: 'Exp' },
           { name: 'Tailwind CSS', level: 'Adv' },
-          { name: 'State Mgmt (Redux)', level: 'Exp' }
-        ]
+          { name: 'State Mgmt (Redux)', level: 'Exp' },
+        ],
       },
       category2: {
         title: 'Observability',
         skills: [
           { name: 'Prometheus/Grafana', level: 'Adv' },
           { name: 'ELK Stack', level: 'Exp' },
-          { name: 'Distributed Tracing', level: 'Mid' }
-        ]
-      }
-    }
+          { name: 'Distributed Tracing', level: 'Mid' },
+        ],
+      },
+    },
   ]
 
   return (
-    <section className="mx-auto max-w-320 px-6 py-20" id="skills">
-      <h2 className="mb-12 text-center text-3xl font-bold text-on-surface md:text-4xl">Technical Expertise</h2>
-      
+    <section className="mx-auto max-w-7xl px-6 py-20" id="skills">
+      <h2 className="mb-12 text-center text-3xl font-bold text-on-surface md:text-4xl">
+        Technical Expertise
+      </h2>
+
       <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
         {groups.map((col, cIdx) => (
           <div key={cIdx} className="space-y-8">

@@ -31,10 +31,12 @@ function HomePage() {
 
   return (
     <main className="flex-grow">
-      <HeroSection onExploreClick={() => {
-        const el = document.getElementById('work')
-        if (el) el.scrollIntoView({ behavior: 'smooth' })
-      }} />
+      <HeroSection
+        onExploreClick={() => {
+          const el = document.getElementById('work')
+          if (el) el.scrollIntoView({ behavior: 'smooth' })
+        }}
+      />
       <ImpactMetrics />
       <AboutSection />
       <WorkSection />

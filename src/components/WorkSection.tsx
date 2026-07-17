@@ -6,8 +6,12 @@ export const WorkSection: React.FC = () => {
     <section className="mx-auto max-w-320 px-6 py-20" id="work">
       <div className="mb-12 flex items-end justify-between">
         <div>
-          <h2 className="text-3xl font-bold text-on-surface md:text-4xl">Featured Engineering Work</h2>
-          <p className="mt-1 text-base text-on-surface-variant md:text-lg">Systems I've built and scaled.</p>
+          <h2 className="text-3xl font-bold text-on-surface md:text-4xl">
+            Featured Engineering Work
+          </h2>
+          <p className="mt-1 text-base text-on-surface-variant md:text-lg">
+            Systems I've built and scaled.
+          </p>
         </div>
         <span className="font-mono text-sm text-outline">/PROJECTS_05</span>
       </div>
@@ -17,16 +21,22 @@ export const WorkSection: React.FC = () => {
         <div className="glass-card flex flex-col justify-between rounded-xl p-6 shadow-xl transition-all duration-300 hover:border-primary/50">
           <div>
             <div className="mb-4 flex items-start justify-between">
-              <span className="font-mono text-xs font-semibold tracking-wider text-primary uppercase">SCALABILITY</span>
+              <span className="font-mono text-xs font-semibold tracking-wider text-primary uppercase">
+                SCALABILITY
+              </span>
               <span className="material-symbols-outlined text-outline">hub</span>
             </div>
             <h3 className="mb-2 text-2xl font-semibold text-on-surface">DMS Platform</h3>
             <p className="mb-4 text-sm leading-relaxed text-on-surface-variant">
-              Centralized distribution management system handling high-volume inventory and transaction flows.
+              Centralized distribution management system handling high-volume inventory and
+              transaction flows.
             </p>
             <div className="mb-6 flex flex-wrap gap-2">
               {['Node.js', 'PostgreSQL', 'Redis'].map((tag) => (
-                <span key={tag} className="rounded bg-outline-variant/30 px-2.5 py-1 font-mono text-[11px] text-outline uppercase">
+                <span
+                  key={tag}
+                  className="rounded bg-outline-variant/30 px-2.5 py-1 font-mono text-[11px] text-outline uppercase"
+                >
                   {tag}
                 </span>
               ))}
@@ -42,7 +52,7 @@ export const WorkSection: React.FC = () => {
               </div>
             </div>
           </div>
-          <Link 
+          <Link
             to="/case-study/dms"
             target="_blank"
             rel="noopener noreferrer"
@@ -56,16 +66,22 @@ export const WorkSection: React.FC = () => {
         <div className="glass-card flex flex-col justify-between rounded-xl p-6 shadow-xl transition-all duration-300 hover:border-primary/50">
           <div>
             <div className="mb-4 flex items-start justify-between">
-              <span className="font-mono text-xs font-semibold tracking-wider text-primary uppercase">AGENTIC AI</span>
+              <span className="font-mono text-xs font-semibold tracking-wider text-primary uppercase">
+                AGENTIC AI
+              </span>
               <span className="material-symbols-outlined text-outline">finance</span>
             </div>
             <h3 className="mb-2 text-2xl font-semibold text-on-surface">AI Stock Agent</h3>
             <p className="mb-4 text-sm leading-relaxed text-on-surface-variant">
-              Multi-agent system using LangGraph for real-time market analysis and sentiment-based stock prediction.
+              Multi-agent system using LangGraph for real-time market analysis and sentiment-based
+              stock prediction.
             </p>
             <div className="mb-6 flex flex-wrap gap-2">
               {['Python', 'LangChain', 'FastAPI'].map((tag) => (
-                <span key={tag} className="rounded bg-outline-variant/30 px-2.5 py-1 font-mono text-[11px] text-outline uppercase">
+                <span
+                  key={tag}
+                  className="rounded bg-outline-variant/30 px-2.5 py-1 font-mono text-[11px] text-outline uppercase"
+                >
                   {tag}
                 </span>
               ))}
@@ -81,7 +97,7 @@ export const WorkSection: React.FC = () => {
               </div>
             </div>
           </div>
-          <Link 
+          <Link
             to="/case-study/dms"
             target="_blank"
             rel="noopener noreferrer"
@@ -96,16 +112,24 @@ export const WorkSection: React.FC = () => {
           <div className="flex flex-col gap-6 md:flex-row">
             <div className="md:w-1/2">
               <div className="mb-4 flex items-start justify-between">
-                <span className="font-mono text-xs font-semibold tracking-wider text-primary uppercase">INFRASTRUCTURE</span>
+                <span className="font-mono text-xs font-semibold tracking-wider text-primary uppercase">
+                  INFRASTRUCTURE
+                </span>
                 <span className="material-symbols-outlined text-outline">monitoring</span>
               </div>
-              <h3 className="mb-2 text-2xl font-semibold text-on-surface">K8s Observability Dashboard</h3>
+              <h3 className="mb-2 text-2xl font-semibold text-on-surface">
+                K8s Observability Dashboard
+              </h3>
               <p className="mb-4 text-sm leading-relaxed text-on-surface-variant">
-                Full-stack observability stack integrating Prometheus, Grafana, and custom Go-based metrics exporters for cluster health.
+                Full-stack observability stack integrating Prometheus, Grafana, and custom Go-based
+                metrics exporters for cluster health.
               </p>
               <div className="mb-4 flex flex-wrap gap-2">
                 {['Go', 'Prometheus', 'Grafana', 'K8s'].map((tag) => (
-                  <span key={tag} className="rounded bg-outline-variant/30 px-2.5 py-1 font-mono text-[11px] text-outline uppercase">
+                  <span
+                    key={tag}
+                    className="rounded bg-outline-variant/30 px-2.5 py-1 font-mono text-[11px] text-outline uppercase"
+                  >
                     {tag}
                   </span>
                 ))}
@@ -123,13 +147,14 @@ export const WorkSection: React.FC = () => {
             </div>
           </div>
           <div className="mt-4 border-t border-outline-variant/40 pt-4">
-            <Link 
+            <Link
               to="/case-study/dms"
               target="_blank"
               rel="noopener noreferrer"
               className="flex w-max cursor-pointer items-center gap-1.5 font-mono text-sm font-medium text-primary transition-all hover:gap-3 hover:text-primary-fixed"
             >
-              VIEW CASE STUDY <span className="material-symbols-outlined text-base">open_in_new</span>
+              VIEW CASE STUDY{' '}
+              <span className="material-symbols-outlined text-base">open_in_new</span>
             </Link>
           </div>
         </div>
@@ -142,10 +167,12 @@ export const WorkSection: React.FC = () => {
               Automated backlog grooming and sprint capacity forecasting using historical Jira data.
             </p>
             <div className="rounded-r border-l-2 border-primary bg-background/40 p-3">
-              <span className="block font-mono text-xs font-semibold text-primary">40% Efficiency Gain</span>
+              <span className="block font-mono text-xs font-semibold text-primary">
+                40% Efficiency Gain
+              </span>
             </div>
           </div>
-          <Link 
+          <Link
             to="/case-study/dms"
             target="_blank"
             rel="noopener noreferrer"
@@ -160,13 +187,16 @@ export const WorkSection: React.FC = () => {
           <div>
             <h3 className="mb-2 text-xl font-semibold text-on-surface">RAG Assistant</h3>
             <p className="mb-4 text-sm leading-relaxed text-on-surface-variant">
-              Enterprise knowledge base with vector embeddings for semantic search over technical docs.
+              Enterprise knowledge base with vector embeddings for semantic search over technical
+              docs.
             </p>
             <div className="rounded-r border-l-2 border-primary bg-background/40 p-3">
-              <span className="block font-mono text-xs font-semibold text-primary">85% Query Accuracy</span>
+              <span className="block font-mono text-xs font-semibold text-primary">
+                85% Query Accuracy
+              </span>
             </div>
           </div>
-          <Link 
+          <Link
             to="/case-study/dms"
             target="_blank"
             rel="noopener noreferrer"

@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --color-background: #0b1326;
@@ -11,7 +11,7 @@
   --color-surface-container-high: #222a3d;
   --color-surface-container-highest: #2d3449;
   --color-surface-variant: #2d3449;
-  
+
   --color-primary: #adc6ff;
   --color-on-primary: #002e6a;
   --color-primary-container: #4d8eff;
@@ -19,17 +19,17 @@
   --color-primary-fixed: #d8e2ff;
   --color-primary-fixed-dim: #adc6ff;
   --color-on-primary-fixed: #001a42;
-  
+
   --color-secondary: #b9c8de;
   --color-on-secondary: #233143;
   --color-secondary-container: #39485a;
   --color-on-secondary-container: #a7b6cc;
-  
+
   --color-tertiary: #ffb786;
   --color-on-tertiary: #502400;
   --color-tertiary-container: #df7412;
   --color-on-tertiary-container: #461f00;
-  
+
   --color-on-surface: #dae2fd;
   --color-on-surface-variant: #c2c6d6;
   --color-outline: #8c909f;
@@ -37,7 +37,7 @@
   --color-error: #ffb4ab;
   --color-on-error: #690005;
   --color-error-container: #93000a;
-  
+
   --font-geist: 'Geist', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
@@ -85,10 +85,23 @@ body {
 }
 
 .material-symbols-outlined {
-  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
 }
 
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #0b1326; }
-::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: #475569; }
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b1326;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}

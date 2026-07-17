@@ -16,25 +16,39 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick }) => {
           Building scalable distributed systems and AI-powered applications.
         </h1>
         <p className="mb-8 max-w-2xl text-base leading-relaxed text-on-surface-variant md:text-xl">
-          I specialize in backend engineering, microservices, distributed systems, cloud-native infrastructure, and Agentic AI — building production systems designed for scale, reliability, and performance.
+          I specialize in backend engineering, microservices, distributed systems, cloud-native
+          infrastructure, and Agentic AI — building production systems designed for scale,
+          reliability, and performance.
         </p>
 
         <div className="mb-10 flex flex-wrap gap-2 opacity-90">
-          {['Node.js', 'TypeScript', 'NestJS', 'PostgreSQL', 'Redis', 'Kubernetes', 'Python', 'LangGraph'].map((tech) => (
-            <span key={tech} className="rounded border border-outline-variant bg-surface-container/60 px-3 py-1 font-mono text-xs text-secondary">
+          {[
+            'Node.js',
+            'TypeScript',
+            'NestJS',
+            'PostgreSQL',
+            'Redis',
+            'Kubernetes',
+            'Python',
+            'LangGraph',
+          ].map((tech) => (
+            <span
+              key={tech}
+              className="rounded border border-outline-variant bg-surface-container/60 px-3 py-1 font-mono text-xs text-secondary"
+            >
               {tech}
             </span>
           ))}
         </div>
 
         <div className="flex flex-wrap gap-4">
-          <button 
+          <button
             onClick={onExploreClick}
             className="flex cursor-pointer items-center gap-2 rounded-lg bg-primary px-6 py-3 font-semibold text-on-primary shadow-lg shadow-primary/10 transition-all hover:bg-primary-fixed"
           >
             Explore My Work <span className="material-symbols-outlined text-xl">arrow_forward</span>
           </button>
-          <button 
+          <button
             onClick={() => window.open('#', '_blank')}
             className="cursor-pointer rounded-lg border border-outline-variant px-6 py-3 font-semibold text-on-surface transition-colors hover:bg-surface-container"
           >
