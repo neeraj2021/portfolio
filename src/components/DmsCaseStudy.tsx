@@ -235,25 +235,25 @@ export const DmsCaseStudy: React.FC<DmsCaseStudyProps> = ({ onBack }) => {
         </section>
 
         {/* 06 Quantifiable Success */}
-        <section className="relative col-span-12 overflow-hidden rounded-xl border border-primary bg-primary-container p-8 text-on-primary-container shadow-2xl">
+        <section className="relative col-span-12 overflow-hidden rounded-xl border border-outline-variant bg-surface-container-high p-8 text-on-surface shadow-2xl">
           <div className="relative z-10">
-            <h2 className="mb-8 text-center text-2xl font-bold text-on-primary-fixed">Quantifiable Success</h2>
+            <h2 className="mb-8 text-center text-2xl font-bold text-on-surface">Quantifiable Success</h2>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
-              <div className="border-r border-on-primary-container/20 text-center last:border-0">
-                <div className="mb-1 font-sans text-4xl font-extrabold">800+</div>
-                <div className="font-mono text-xs tracking-wider uppercase opacity-90">Requests Per Second</div>
+              <div className="border-r border-outline-variant/30 text-center last:border-0">
+                <div className="mb-1 font-sans text-4xl font-extrabold text-on-surface">800+</div>
+                <div className="font-mono text-xs tracking-wider uppercase text-on-surface-variant">Requests Per Second</div>
               </div>
-              <div className="border-r border-on-primary-container/20 text-center last:border-0">
-                <div className="mb-1 font-sans text-4xl font-extrabold">70%</div>
-                <div className="font-mono text-xs tracking-wider uppercase opacity-90">Latency Reduction</div>
+              <div className="border-r border-outline-variant/30 text-center last:border-0">
+                <div className="mb-1 font-sans text-4xl font-extrabold text-on-surface">70%</div>
+                <div className="font-mono text-xs tracking-wider uppercase text-on-surface-variant">Latency Reduction</div>
               </div>
-              <div className="border-r border-on-primary-container/20 text-center last:border-0">
-                <div className="mb-1 font-sans text-4xl font-extrabold">3.5m</div>
-                <div className="font-mono text-xs tracking-wider uppercase opacity-90">2K Orders Processing</div>
+              <div className="border-r border-outline-variant/30 text-center last:border-0">
+                <div className="mb-1 font-sans text-4xl font-extrabold text-on-surface">3.5m</div>
+                <div className="font-mono text-xs tracking-wider uppercase text-on-surface-variant">2K Orders Processing</div>
               </div>
               <div className="text-center last:border-0">
-                <div className="mb-1 font-sans text-4xl font-extrabold">0%</div>
-                <div className="font-mono text-xs tracking-wider uppercase opacity-90">Inventory Discrepancy</div>
+                <div className="mb-1 font-sans text-4xl font-extrabold text-on-surface">0%</div>
+                <div className="font-mono text-xs tracking-wider uppercase text-on-surface-variant">Inventory Discrepancy</div>
               </div>
             </div>
           </div>
