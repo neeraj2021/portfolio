@@ -27,7 +27,7 @@ export const TopNavBar: React.FC<TopNavBarProps> = ({ currentView }) => {
   }
 
   return (
-    <nav className="fixed top-0 left-1/2 z-50 flex w-full max-w-320 -translate-x-1/2 items-center justify-between border-b border-outline-variant bg-background/80 px-6 py-4 backdrop-blur-md">
+    <nav className="fixed top-0 left-1/2 z-50 flex w-full max-w-7xl -translate-x-1/2 items-center justify-between border-b border-outline-variant bg-background/80 px-6 py-4 backdrop-blur-md">
       <div
         className="cursor-pointer text-xl font-bold text-on-surface transition-colors hover:text-primary"
         onClick={(e) => handleNavClick(e)}
@@ -57,18 +57,19 @@ export const TopNavBar: React.FC<TopNavBarProps> = ({ currentView }) => {
         </a>
         <a
           className="cursor-pointer font-medium text-on-surface-variant transition-colors hover:text-primary"
-          href="#experience"
-          onClick={(e) => handleNavClick(e, 'experience')}
-        >
-          Experience
-        </a>
-        <a
-          className="cursor-pointer font-medium text-on-surface-variant transition-colors hover:text-primary"
           href="#skills"
           onClick={(e) => handleNavClick(e, 'skills')}
         >
           Skills
         </a>
+        <a
+          className="cursor-pointer font-medium text-on-surface-variant transition-colors hover:text-primary"
+          href="#experience"
+          onClick={(e) => handleNavClick(e, 'experience')}
+        >
+          Experience
+        </a>
+
         <a
           className="cursor-pointer font-medium text-on-surface-variant transition-colors hover:text-primary"
           href="#contact"
