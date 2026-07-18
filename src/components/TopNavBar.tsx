@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
+import { RESUME_URL } from '../constants/resume'
 
 interface TopNavBarProps {
   currentView: 'home' | 'dms-case-study'
@@ -76,7 +77,7 @@ export const TopNavBar: React.FC<TopNavBarProps> = ({ currentView }) => {
           Contact
         </a>
         <button
-          onClick={() => window.open('#', '_blank')}
+          onClick={() => window.open(RESUME_URL, '_blank')}
           className="rounded-lg bg-primary px-4 py-1.5 font-semibold text-on-primary transition-all hover:bg-primary-fixed active:scale-95"
         >
           Resume
@@ -133,7 +134,7 @@ export const TopNavBar: React.FC<TopNavBarProps> = ({ currentView }) => {
             Contact
           </a>
           <button
-            onClick={() => window.open('#', '_blank')}
+            onClick={() => window.open(RESUME_URL, '_blank')}
             className="w-full rounded-lg bg-primary py-2 font-semibold text-on-primary"
           >
             Resume

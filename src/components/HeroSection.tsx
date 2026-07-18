@@ -1,4 +1,5 @@
 import React from 'react'
+import { RESUME_URL } from '../constants/resume'
 
 interface HeroSectionProps {
   onExploreClick: () => void
@@ -6,8 +7,8 @@ interface HeroSectionProps {
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick }) => {
   return (
-    <section className="relative mx-auto flex min-h-[750px] max-w-320 flex-col items-start justify-center overflow-hidden px-6 pt-28 pb-16">
-      <div className="pointer-events-none absolute top-0 right-0 h-full w-1/2 bg-[radial-gradient(#adc6ff_1px,transparent_1px)] [background-size:24px_24px] opacity-10"></div>
+    <section className="relative mx-auto flex min-h-[750px] max-w-7xl flex-col items-start justify-center overflow-hidden px-6 pt-28 pb-16">
+      <div className="pointer-events-none absolute top-0 right-0 size-full bg-[radial-gradient(#adc6ff_1px,transparent_1px)] bg-size-[24px_24px] opacity-10"></div>
       <div className="z-10 max-w-3xl">
         <span className="mb-6 inline-block rounded-md border border-primary/20 bg-primary/10 px-3 py-1 font-mono text-xs font-medium tracking-wider text-primary uppercase md:text-sm">
           SYSTEMS ARCHITECT & AI ENGINEER
@@ -49,7 +50,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick }) => {
             Explore My Work <span className="material-symbols-outlined text-xl">arrow_forward</span>
           </button>
           <button
-            onClick={() => window.open('#', '_blank')}
+            onClick={() => window.open(RESUME_URL, '_blank')}
             className="cursor-pointer rounded-lg border border-outline-variant px-6 py-3 font-semibold text-on-surface transition-colors hover:bg-surface-container"
           >
             View Resume
