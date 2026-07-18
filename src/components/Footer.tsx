@@ -1,4 +1,5 @@
 import React from 'react'
+import { LINKEDIN_URL, GITHUB_URL, MEDIUM_URL } from '../constants/social'
 
 export const Footer: React.FC = () => {
   return (
@@ -14,7 +15,7 @@ export const Footer: React.FC = () => {
         </div>
         <div className="flex gap-6 text-sm">
           <a
-            href="https://linkedin.com"
+            href={LINKEDIN_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="text-on-surface-variant transition-colors hover:text-primary"
@@ -22,7 +23,7 @@ export const Footer: React.FC = () => {
             LinkedIn
           </a>
           <a
-            href="https://github.com"
+            href={GITHUB_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="text-on-surface-variant transition-colors hover:text-primary"
@@ -30,12 +31,12 @@ export const Footer: React.FC = () => {
             GitHub
           </a>
           <a
-            href="https://x.com"
+            href={MEDIUM_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="text-on-surface-variant transition-colors hover:text-primary"
           >
-            Twitter
+            Medium
           </a>
           <a
             href="mailto:neeraj.mahawar@example.com"

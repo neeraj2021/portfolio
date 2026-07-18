@@ -1,4 +1,5 @@
 import React from 'react'
+import { LINKEDIN_URL, GITHUB_URL, MEDIUM_URL } from '../constants/social'
 
 export const ContactSection: React.FC = () => {
   return (
@@ -27,7 +28,7 @@ export const ContactSection: React.FC = () => {
           </a>
 
           <a
-            href="https://github.com"
+            href={GITHUB_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="group flex flex-col items-center gap-2 transition-transform hover:scale-105"
@@ -39,7 +40,7 @@ export const ContactSection: React.FC = () => {
           </a>
 
           <a
-            href="https://linkedin.com"
+            href={LINKEDIN_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="group flex flex-col items-center gap-2 transition-transform hover:scale-105"
@@ -51,7 +52,7 @@ export const ContactSection: React.FC = () => {
           </a>
 
           <a
-            href="https://medium.com"
+            href={MEDIUM_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="group flex flex-col items-center gap-2 transition-transform hover:scale-105"
